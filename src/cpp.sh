@@ -29,7 +29,7 @@ cat <<EOF > "$FILE_PATH"
 	    "",
             "int main() {",
             "\t\$0",
-	    "\treturn 0;"
+      	    "\treturn 0;"
             "}"
         ],
         "description": "C++ basic main structure"
