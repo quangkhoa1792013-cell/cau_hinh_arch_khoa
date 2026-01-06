@@ -50,7 +50,7 @@ setup_path
 
 # --- DANH SÁCH GÓI ---
 # Danh sách mặc định của Khoa
-PACMAN_KHOA="zip 7zip python dhcp steam os-prober efibootmgr limine cava cmatrix btop tar gcc cargo python-pip curl automake make wine nano nvim vim mkinitcpio limine-mkinitcpio-hook git flatpak bc gum fakeroot file"
+PACMAN_KHOA="zip 7zip python dhcp steam os-prober efibootmgr limine cava cmatrix btop tar gcc cargo python-pip curl automake make wine nano nvim vim mkinitcpio limine-mkinitcpio-hook git flatpak bc gum fakeroot file direnv python javac"
 AUR_KHOA="zalo-macos tty-clock github-desktop-bin spicetify-cli google-chrome visual-studio-code-bin warp-cli windsurf tlauncher-installer"
 
 # Các gói cần cho Unikey/Tiếng Việt
