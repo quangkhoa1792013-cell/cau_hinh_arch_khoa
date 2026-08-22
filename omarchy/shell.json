@@ -1,0 +1,111 @@
+{
+  "bar": {
+    "centerAnchor": "omarchy.clock",
+    "layout": {
+      "center": [
+        {
+          "id": "omarchy.indicators"
+        },
+        {
+          "id": "omarchy.clock",
+          "format": "dddd HH:mm",
+          "formatAlt": "d MMMM 'W'ww yyyy",
+          "verticalFormat": "HH\n—\nmm"
+        },
+        {
+          "id": "omarchy.keyboard-layout"
+        },
+        {
+          "id": "omarchy.weather"
+        },
+        {
+          "id": "omarchy.system-update"
+        },
+        {
+          "id": "omarchy.media"
+        },
+        {
+          "id": "my.cava",
+          "gap": 4,
+          "barWidth": 4,
+          "bars": 7
+        }
+      ],
+      "left": [
+        {
+          "id": "omarchy.menu"
+        },
+        {
+          "id": "omarchy.workspaces"
+        }
+      ],
+      "right": [
+        {
+          "id": "omarchy.tray"
+        },
+        {
+          "id": "stappmus.activity-monitor"
+        },
+        {
+          "id": "io.github.ilyazar.plugin-control"
+        },
+        {
+          "id": "lgse.sandman"
+        },
+        {
+          "id": "dizziee.system-updates"
+        },
+        {
+          "id": "jkoestinger.vpn"
+        },
+        {
+          "id": "io.github.juancasanueva.plugin-manager"
+        },
+        {
+          "id": "shavanced.notification-center"
+        },
+        {
+          "id": "omarchy.agents"
+        },
+        {
+          "id": "omarchy.bluetooth"
+        },
+        {
+          "id": "omarchy.network"
+        },
+        {
+          "id": "omarchy.audio"
+        },
+        {
+          "id": "omarchy.power"
+        },
+        {
+          "id": "omarchy.monitor"
+        },
+        {
+          "id": "agx.screen-time"
+        }
+      ]
+    },
+    "position": "top",
+    "transparent": false
+  },
+  "idle": {
+    "lock": 604800,
+    "screensaver": 604801
+  },
+  "plugins": [
+    {
+      "id": "bobbynicholas.omaland"
+    },
+    {
+      "id": "io.github.sirjul1337.lock-explorer",
+      "avatar": "/home/khoablabla/images.jpeg",
+      "design": "card"
+    }
+  ],
+  "version": 1,
+  "disabledPlugins": [
+    "omarchy.lock"
+  ]
+}

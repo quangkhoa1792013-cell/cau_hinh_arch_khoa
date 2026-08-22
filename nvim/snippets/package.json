@@ -1,0 +1,15 @@
+{
+  "name": "nvim-custom-snippets",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": ["cpp", "c", "cc", "cxx"],
+        "path": "./cpp.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+[font]
+base-size = 12
+
+[idle]
+screensaver = "5m"
+lock = "10m"
+
+[idle]
+screensaver = "9999999m"
+lock = "99999m"

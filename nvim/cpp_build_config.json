@@ -1,0 +1,1 @@
+{"detected_at":1783404428,"flags":["-std=c++20","-O3","-march=native","-Wall","-Wextra","-Wpedantic","-Wshadow","-Wcast-align","-Wconversion","-Wsign-conversion","-g","-fdiagnostics-color=always"],"compiler_path":"/usr/bin/clang++","compiler_name":"clang++"}

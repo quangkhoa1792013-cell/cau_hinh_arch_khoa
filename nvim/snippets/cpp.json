@@ -1,0 +1,124 @@
+{
+  "C++ Basic Structure": {
+    "prefix": "!cpp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "int main(){",
+      "\tios_base::sync_with_stdio(false);",
+      "\tcin.tie(NULL);",
+      "",
+      "\t$0",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "C++ basic main structure"
+  },
+  "Freopen input file": {
+    "prefix": "!infreopen",
+    "body": [
+      "freopen(\"${TM_FILENAME_BASE}.inp\", \"r\", stdin);"
+    ],
+    "description": "Tự động tạo freopen theo tên file hiện tại"
+  },
+  "Freopen output file": {
+    "prefix": "!outfreopen",
+    "body": [
+      "freopen(\"${TM_FILENAME_BASE}.out\", \"w\", stdout);"
+    ],
+    "description": "Tự động tạo freopen theo tên file hiện tại"
+  },
+  "Dynamic Context For": {
+    "prefix": "!for",
+    "body": [
+      "for (int ${1|i,j,y,a,b,c,d,k,s|} = 0; ${1} < ${2}; ${1}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Gõ !for, chọn biến rồi Tab để vào trong"
+  },
+  "Read array": {
+    "prefix": "!readarr",
+    "body": [
+      "vector<${1:int}> a(${2:n});",
+      "for (auto &x : a) cin >> x;"
+    ],
+    "description": "Khai báo và đọc mảng vector"
+  },
+  "Binary Search": {
+    "prefix": "!bs",
+    "body": [
+      "long long ${1:lo} = ${2:0}, ${3:hi} = ${4:1e18}, ${5:ans} = ${4};",
+      "while (${1} <= ${3}) {",
+      "\tlong long mid = (${1} + ${3}) / 2;",
+      "\tif (${6:check(mid)}) {",
+      "\t\t${5} = mid;",
+      "\t\t${3} = mid - 1;",
+      "\t} else {",
+      "\t\t${1} = mid + 1;",
+      "\t}",
+      "}",
+      "$0"
+    ],
+    "description": "Tìm kiếm nhị phân"
+  },
+  "GCD LCM": {
+    "prefix": "!gcd",
+    "body": [
+      "long long gcd(long long a, long long b) { return b ? gcd(b, a % b) : a; }",
+      "long long lcm(long long a, long long b) { return a / gcd(a, b) * b; }"
+    ],
+    "description": "GCD và LCM"
+  },
+  "Fast Power": {
+    "prefix": "!powmod",
+    "body": [
+      "long long powmod(long long base, long long exp, long long mod = 1e9 + 7) {",
+      "\tlong long res = 1;",
+      "\twhile (exp) {",
+      "\t\tif (exp & 1) res = res * base % mod;",
+      "\t\tbase = base * base % mod;",
+      "\t\texp >>= 1;",
+      "\t}",
+      "\treturn res;",
+      "}"
+    ],
+    "description": "Luỹ thừa nhanh modulo"
+  },
+  "Sieve Prime": {
+    "prefix": "!sieve",
+    "body": [
+      "vector<bool> is_prime(${1:n} + 1, true);",
+      "is_prime[0] = is_prime[1] = false;",
+      "for (long long i = 2; i * i <= ${1:n}; i++)",
+      "\tif (is_prime[i])",
+      "\t\tfor (long long j = i * i; j <= ${1:n}; j += i)",
+      "\t\t\tis_prime[j] = false;"
+    ],
+    "description": "Sàng số nguyên tố"
+  },
+  "Prefix Sum": {
+    "prefix": "!prefix",
+    "body": [
+      "vector<long long> pref(${1:n} + 1, 0);",
+      "for (int i = 1; i <= ${1:n}; i++) pref[i] = pref[i - 1] + ${2:a[i]};"
+    ],
+    "description": "Mảng cộng dồn 1-indexed"
+  },
+  "Sort desc": {
+    "prefix": "!sortdesc",
+    "body": [
+      "sort(${1:a}.begin(), ${1:a}.end(), greater<>());"
+    ],
+    "description": "Sắp xếp giảm dần"
+  },
+  "Min max with lamda": {
+    "prefix": "!minmax",
+    "body": [
+      "auto ${1:mn} = *min_element(${2:a}.begin(), ${2:a}.end());",
+      "auto ${3:mx} = *max_element(${2:a}.begin(), ${2:a}.end());"
+    ],
+    "description": "Tìm min max trong vector"
+  }
+}

@@ -1,0 +1,19 @@
+# 1. Bỏ qua tất cả các file/thư mục ở cấp gốc của ~/.config
+/*
+
+# 2. Loại trừ (giữ lại) file .gitignore
+!.gitignore
+
+# 3. Loại trừ các thư mục bạn MUỐN theo dõi
+!omarchy/
+!hypr/
+!cava/
+!quickshell/
+!btop/
+!fastfetch/
+!nvim/
+!alacritty/
+
+# 4. Chặn các file/thư mục rác bên trong các thư mục được chọn (nếu có)
+omarchy/**/cache/
+cava/shaders/

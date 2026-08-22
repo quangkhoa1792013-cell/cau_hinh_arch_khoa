@@ -1,0 +1,46 @@
+general.import = [ "~/.local/state/omarchy/current/theme/alacritty.toml" ]
+
+[env]
+TERM = "xterm-256color"
+
+[terminal]
+osc52 = "CopyPaste"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 9
+
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "None"
+
+# === Bật lại animation trượt mượt của alacritty-smooth-cursor ===
+[cursor]
+style = { shape = "Block", blinking = "On" }
+smooth_motion = true
+smooth_motion_factor = 0.7
+smooth_motion_spring = 0.5
+
+# === Keybindings Paste/Copy đúng cú pháp mảng ===
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "Insert"
+mods = "Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B[13;2u"
