@@ -13,7 +13,8 @@
 !fastfetch/
 !nvim/
 !alacritty/
-
+!.bashrc
+!src/
 # 4. Chặn các file/thư mục rác bên trong các thư mục được chọn (nếu có)
 omarchy/**/cache/
 cava/shaders/
