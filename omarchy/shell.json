@@ -7,10 +7,10 @@
           "id": "omarchy.indicators"
         },
         {
-          "id": "omarchy.clock",
           "format": "dddd HH:mm",
           "formatAlt": "d MMMM 'W'ww yyyy",
-          "verticalFormat": "HH\n—\nmm"
+          "id": "omarchy.clock",
+          "verticalFormat": "HH\n\u2014\nmm"
         },
         {
           "id": "omarchy.keyboard-layout"
@@ -25,10 +25,10 @@
           "id": "omarchy.media"
         },
         {
-          "id": "my.cava",
-          "gap": 4,
           "barWidth": 4,
-          "bars": 7
+          "bars": 7,
+          "gap": 4,
+          "id": "my.cava"
         }
       ],
       "left": [
@@ -45,6 +45,9 @@
         },
         {
           "id": "stappmus.activity-monitor"
+        },
+        {
+          "id": "gladimdim.config-sync"
         },
         {
           "id": "io.github.ilyazar.plugin-control"
@@ -84,12 +87,18 @@
         },
         {
           "id": "agx.screen-time"
+        },
+        {
+          "id": "hancore.shibumi.control-center"
         }
       ]
     },
     "position": "top",
     "transparent": false
   },
+  "disabledPlugins": [
+    "omarchy.lock"
+  ],
   "idle": {
     "lock": 604800,
     "screensaver": 604801
@@ -99,13 +108,30 @@
       "id": "bobbynicholas.omaland"
     },
     {
-      "id": "io.github.sirjul1337.lock-explorer",
       "avatar": "/home/khoablabla/images.jpeg",
-      "design": "card"
+      "design": "card",
+      "id": "io.github.sirjul1337.lock-explorer"
+    },
+    {
+      "id": "hancore.shibumi.state",
+      "shibumi": {
+        "identityVersion": 3,
+        "version": 1
+      },
+      "shibumiStateSchemaVersion": 1
+    },
+    {
+      "id": "hancore.shibumi.reactor"
+    },
+    {
+      "id": "hancore.shibumi.telemetry"
+    },
+    {
+      "id": "hancore.shibumi.power-state"
+    },
+    {
+      "id": "hancore.shibumi.update-center"
     }
   ],
-  "version": 1,
-  "disabledPlugins": [
-    "omarchy.lock"
-  ]
+  "version": 1
 }

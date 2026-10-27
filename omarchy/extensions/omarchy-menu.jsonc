@@ -27,4 +27,8 @@
   // Example: replace the default About action by reusing the same id. Existing
   // fields are kept unless overridden.
   // "about": {"icon":"","label":"About","action":"omarchy-launch-or-focus-tui \"zsh -c 'fastfetch; read -k 1'\""},
+  // shibumi-picker-routing-start
+  "style.theme": {"icon":"󰸌","label":"Theme","aliases":["theme","themes"],"action":"if [[ -x \"$HOME/.config/omarchy/plugins/hancore.shibumi.quick-access/scripts/shibumi-picker-route\" ]]; then \"$HOME/.config/omarchy/plugins/hancore.shibumi.quick-access/scripts/shibumi-picker-route\" theme; else theme=$(omarchy-theme-switcher); [[ -n $theme ]] && omarchy-theme-set \"$theme\"; fi"},
+  "style.background": {"icon":"","label":"Background","aliases":["background","wallpaper"],"action":"if [[ -x \"$HOME/.config/omarchy/plugins/hancore.shibumi.quick-access/scripts/shibumi-picker-route\" ]]; then \"$HOME/.config/omarchy/plugins/hancore.shibumi.quick-access/scripts/shibumi-picker-route\" wallpaper; else background=$(omarchy-theme-bg-switcher); [[ -n $background ]] && omarchy-theme-bg-set \"$background\"; fi"}
+  // shibumi-picker-routing-end
 }
