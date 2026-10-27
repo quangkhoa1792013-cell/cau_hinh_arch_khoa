@@ -10,7 +10,7 @@
           "format": "dddd HH:mm",
           "formatAlt": "d MMMM 'W'ww yyyy",
           "id": "omarchy.clock",
-          "verticalFormat": "HH\n\u2014\nmm"
+          "verticalFormat": "HH\n—\nmm"
         },
         {
           "id": "omarchy.keyboard-layout"
@@ -42,6 +42,9 @@
       "right": [
         {
           "id": "omarchy.tray"
+        },
+        {
+          "id": "omarchy.tailscale"
         },
         {
           "id": "stappmus.activity-monitor"
@@ -97,7 +100,8 @@
     "transparent": false
   },
   "disabledPlugins": [
-    "omarchy.lock"
+    "omarchy.lock",
+    "omarchy.background"
   ],
   "idle": {
     "lock": 604800,
@@ -131,7 +135,13 @@
     },
     {
       "id": "hancore.shibumi.update-center"
+    },
+    {
+      "id": "nixfred.infomarchy"
     }
   ],
-  "version": 1
+  "version": 1,
+  "cloneSourceRestores": [
+    "nixfred.infomarchy"
+  ]
 }
