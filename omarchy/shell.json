@@ -44,10 +44,16 @@
           "id": "omarchy.tray"
         },
         {
+          "id": "omarchy.spacer"
+        },
+        {
           "id": "omarchy.tailscale"
         },
         {
           "id": "stappmus.activity-monitor"
+        },
+        {
+          "id": "omamail"
         },
         {
           "id": "gladimdim.config-sync"
@@ -60,9 +66,6 @@
         },
         {
           "id": "dizziee.system-updates"
-        },
-        {
-          "id": "jkoestinger.vpn"
         },
         {
           "id": "io.github.juancasanueva.plugin-manager"
@@ -99,6 +102,9 @@
     "position": "top",
     "transparent": false
   },
+  "cloneSourceRestores": [
+    "nixfred.infomarchy"
+  ],
   "disabledPlugins": [
     "omarchy.lock",
     "omarchy.background"
@@ -115,6 +121,9 @@
       "avatar": "/home/khoablabla/images.jpeg",
       "design": "card",
       "id": "io.github.sirjul1337.lock-explorer"
+    },
+    {
+      "id": "nixfred.infomarchy"
     },
     {
       "id": "hancore.shibumi.state",
@@ -135,13 +144,7 @@
     },
     {
       "id": "hancore.shibumi.update-center"
-    },
-    {
-      "id": "nixfred.infomarchy"
     }
   ],
-  "version": 1,
-  "cloneSourceRestores": [
-    "nixfred.infomarchy"
-  ]
+  "version": 1
 }
