@@ -1,19 +1,45 @@
 {
   "bar": {
-    "centerAnchor": "omarchy.clock",
+    "background": "opaque",
     "layout": {
       "center": [
         {
-          "id": "omarchy.indicators"
-        },
-        {
-          "id": "omarchy.clock",
-          "format": "dddd h:mm AP",
+          "format": "dddd HH:mm",
           "formatAlt": "d MMMM 'W'ww yyyy",
+          "id": "omarchy.clock",
           "verticalFormat": "HH\n—\nmm"
-        },
+        }
+      ],
+      "centerBegin": [
         {
-          "id": "omarchy.keyboard-layout"
+          "id": "omarchy.indicators"
+        }
+      ],
+      "centerEnd": [
+        {
+          "cities": [
+            {
+              "name": "Saigon",
+              "zone": "Asia/Saigon"
+            },
+            {
+              "name": "New York",
+              "zone": "America/New_York"
+            },
+            {
+              "name": "Los Angeles",
+              "zone": "America/Los_Angeles"
+            },
+            {
+              "name": "London",
+              "zone": "Europe/London"
+            },
+            {
+              "name": "Dubai",
+              "zone": "Asia/Dubai"
+            }
+          ],
+          "id": "omarchy.elsewhen"
         },
         {
           "id": "omarchy.weather"
@@ -44,6 +70,9 @@
           "id": "omarchy.tray"
         },
         {
+          "id": "omarchy.keyboard-layout"
+        },
+        {
           "id": "omarchy.spacer"
         },
         {
@@ -62,13 +91,16 @@
           "id": "io.github.ilyazar.plugin-control"
         },
         {
+          "id": "io.github.juancasanueva.plugin-manager"
+        },
+        {
           "id": "lgse.sandman"
         },
         {
           "id": "dizziee.system-updates"
         },
         {
-          "id": "io.github.juancasanueva.plugin-manager"
+          "id": "gennaro.updater"
         },
         {
           "id": "shavanced.notification-center"
@@ -99,15 +131,10 @@
         }
       ]
     },
-    "position": "top",
-    "transparent": false
+    "position": "top"
   },
-  "cloneSourceRestores": [
-    "nixfred.infomarchy"
-  ],
   "disabledPlugins": [
-    "omarchy.lock",
-    "omarchy.background"
+    "omarchy.lock"
   ],
   "idle": {
     "lock": 604800,
@@ -121,9 +148,6 @@
       "avatar": "/home/khoablabla/images.jpeg",
       "design": "card",
       "id": "io.github.sirjul1337.lock-explorer"
-    },
-    {
-      "id": "nixfred.infomarchy"
     },
     {
       "id": "hancore.shibumi.state",
