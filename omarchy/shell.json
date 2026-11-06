@@ -70,9 +70,6 @@
           "id": "omarchy.tray"
         },
         {
-          "id": "omarchy.keyboard-layout"
-        },
-        {
           "id": "omarchy.spacer"
         },
         {
@@ -129,12 +126,14 @@
         {
           "id": "hancore.shibumi.control-center"
         }
-      ]
+      ],
+      "tray": []
     },
     "position": "top"
   },
   "disabledPlugins": [
-    "omarchy.lock"
+    "omarchy.lock",
+    "omarchy.background"
   ],
   "idle": {
     "lock": 604800,
@@ -168,7 +167,13 @@
     },
     {
       "id": "hancore.shibumi.update-center"
+    },
+    {
+      "id": "nixfred.infomarchy"
     }
   ],
-  "version": 1
+  "version": 1,
+  "cloneSourceRestores": [
+    "nixfred.infomarchy"
+  ]
 }
